@@ -1,10 +1,9 @@
-/* eslint-disable no-script-url */
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Error = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
+  const navigate = useNavigate(); // useNavigate hook to handle backward navigation
 
   return (
     <div className="pt-5">
@@ -23,15 +22,14 @@ const Error = () => {
                 <Link to="/" className="btn btn-grd-danger rounded-5 px-4">
                   <i className="bi bi-house-fill me-2"></i>Go To Home
                 </Link>
-                <Link
-                  to="javascript:history.back()"
+                <button
                   className="btn btn-light rounded-5 px-4"
+                  onClick={() => navigate(-1)} // Navigate to previous page
                 >
                   <i className="bi bi-arrow-left me-2"></i>Previous Page
-                </Link>
+                </button>
               </div>
 
-              {/* Updated copyright section */}
               <div className="mt-4 ">
                 <div className="copyright ">
                   <Link

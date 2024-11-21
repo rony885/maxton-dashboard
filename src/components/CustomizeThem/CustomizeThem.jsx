@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 const CustomizeThem = () => {
   // State to store the current theme
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("blue-theme");
   // Load theme from localStorage when the component mounts
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "blue-theme";
     setTheme(savedTheme);
     document.documentElement.setAttribute("data-bs-theme", savedTheme); // Apply the saved theme to the HTML tag
   }, []);
@@ -23,9 +23,9 @@ const CustomizeThem = () => {
         data-bs-toggle="offcanvas"
         data-bs-target="#staticBackdrop"
         style={{
-          bottom: "50px", // Move the button upwards from the bottom
-          right: "10px", // Move the button inwards from the right
-          transition: "all 0.5s ease-in-out", // Smooth transition effect
+          bottom: "50px",
+          right: "10px",
+          transition: "all 0.5s ease-in-out",
         }}
       >
         <i className="material-icons-outlined">tune</i>Customize

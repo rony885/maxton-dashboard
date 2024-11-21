@@ -1,15 +1,3 @@
-// import React from "react";
-
-// const Overlay = () => {
-//   return (
-//     <>
-//       <div class="overlay btn-toggle"></div>
-//     </>
-//   );
-// };
-
-// export default Overlay;
-
 import React from "react";
 
 const Overlay = ({ className = "", onClick }) => {
