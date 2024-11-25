@@ -30,6 +30,7 @@ const CustomizeThem = () => {
       >
         <i className="material-icons-outlined">tune</i>Customize
       </button>
+      
       {/* Offcanvas sidebar */}
       <div
         className="offcanvas offcanvas-end"

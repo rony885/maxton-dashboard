@@ -1,66 +1,65 @@
-/* eslint-disable no-script-url */
 import React from "react";
 import Chart from "react-apexcharts";
 import { Link } from "react-router-dom";
 
 const Charts = () => {
   // Area Chart options
-  // const areaChartOptions = {
-  //   chart: {
-  //     type: "area",
-  //   },
-  //   series: [
-  //     {
-  //       name: "Series 1",
-  //       data: [31, 40, 28, 51, 42, 109, 100],
-  //     },
-  //   ],
-  //   xaxis: {
-  //     categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-  //   },
-  // };
+  const areaChartOptions = {
+    chart: {
+      type: "area",
+    },
+    series: [
+      {
+        name: "Series 1",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+    xaxis: {
+      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    },
+  };
 
   // Line Chart options
-  // const lineChartOptions = {
-  //   chart: {
-  //     type: "line",
-  //   },
-  //   series: [
-  //     {
-  //       name: "Series 1",
-  //       data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-  //     },
-  //   ],
-  //   xaxis: {
-  //     categories: [
-  //       "Jan",
-  //       "Feb",
-  //       "Mar",
-  //       "Apr",
-  //       "May",
-  //       "Jun",
-  //       "Jul",
-  //       "Aug",
-  //       "Sep",
-  //     ],
-  //   },
-  // };
+  const lineChartOptions = {
+    chart: {
+      type: "line",
+    },
+    series: [
+      {
+        name: "Series 1",
+        data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+      },
+    ],
+    xaxis: {
+      categories: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+      ],
+    },
+  };
 
   // Bar Chart options
-  // const barChartOptions = {
-  //   chart: {
-  //     type: "bar",
-  //   },
-  //   series: [
-  //     {
-  //       name: "Series 1",
-  //       data: [44, 55, 41, 64, 22, 43, 21],
-  //     },
-  //   ],
-  //   xaxis: {
-  //     categories: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-  //   },
-  // };
+  const barChartOptions = {
+    chart: {
+      type: "bar",
+    },
+    series: [
+      {
+        name: "Series 1",
+        data: [44, 55, 41, 64, 22, 43, 21],
+      },
+    ],
+    xaxis: {
+      categories: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    },
+  };
 
   // Pie Chart options
   const pieChartOptions = {
@@ -81,22 +80,22 @@ const Charts = () => {
   };
 
   // Radial Chart options
-  // const radialChartOptions = {
-  //   chart: {
-  //     type: "radialBar",
-  //   },
-  //   series: [67],
-  //   labels: ["Progress"],
-  // };
+  const radialChartOptions = {
+    chart: {
+      type: "radialBar",
+    },
+    series: [67],
+    labels: ["Progress"],
+  };
 
   // Radial Bar Chart options
-  // const radialBarChartOptions = {
-  //   chart: {
-  //     type: "radialBar",
-  //   },
-  //   series: [44, 55, 67, 83],
-  //   labels: ["Apple", "Mango", "Orange", "Banana"],
-  // };
+  const radialBarChartOptions = {
+    chart: {
+      type: "radialBar",
+    },
+    series: [44, 55, 67, 83],
+    labels: ["Apple", "Mango", "Orange", "Banana"],
+  };
 
   return (
     <main className="main-wrapper">
@@ -108,7 +107,7 @@ const Charts = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb mb-0 p-0">
                 <li className="breadcrumb-item">
-                  <Link to="javascript:;">
+                  <Link to="#">
                     <i className="bx bx-home-alt"></i>
                   </Link>
                 </li>
@@ -122,7 +121,7 @@ const Charts = () => {
 
         <div className="row">
           {/* Area Chart */}
-          {/* <div className="col-12 col-xl-12">
+          <div className="col-12 col-xl-12">
             <div className="card rounded-4">
               <div className="card-header py-3">
                 <h5 className="mb-0">Area Chart</h5>
@@ -136,10 +135,10 @@ const Charts = () => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Line Chart */}
-          {/* <div className="col-12 col-xl-12">
+          <div className="col-12 col-xl-12">
             <div className="card rounded-4">
               <div className="card-header py-3">
                 <h5 className="mb-0">Line Chart</h5>
@@ -153,10 +152,10 @@ const Charts = () => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Bar Chart */}
-          {/* <div className="col-12 col-xl-12">
+          <div className="col-12 col-xl-12">
             <div className="card rounded-4">
               <div className="card-header py-3">
                 <h5 className="mb-0">Bar Chart</h5>
@@ -170,7 +169,7 @@ const Charts = () => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Pie Chart */}
           <div className="col-12 col-xl-6">
@@ -207,7 +206,7 @@ const Charts = () => {
           </div>
 
           {/* Radial Chart */}
-          {/* <div className="col-12 col-xl-6">
+          <div className="col-12 col-xl-6">
             <div className="card rounded-4">
               <div className="card-header py-3">
                 <h5 className="mb-0">Radial Chart</h5>
@@ -221,10 +220,10 @@ const Charts = () => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Radial Bar Chart */}
-          {/* <div className="col-12 col-xl-6">
+          <div className="col-12 col-xl-6">
             <div className="card rounded-4">
               <div className="card-header py-3">
                 <h5 className="mb-0">Radial Bar Chart</h5>
@@ -238,7 +237,7 @@ const Charts = () => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </main>
