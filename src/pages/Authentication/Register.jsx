@@ -1,9 +1,15 @@
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <main className="main-wrapper">
       <div className="main-content">
@@ -104,7 +110,7 @@ const Register = () => {
                         </label>
                         <div className="input-group" id="show_hide_password">
                           <input
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             className="form-control border-end-0"
                             id="inputChoosePassword"
                             value="12345678"
@@ -113,8 +119,15 @@ const Register = () => {
                           <a
                             href="javascript:;"
                             className="input-group-text bg-transparent"
+                            onClick={togglePasswordVisibility}
                           >
-                            <i className="bi bi-eye-slash-fill"></i>
+                            <i
+                              className={`bi ${
+                                showPassword
+                                  ? "bi-eye-fill"
+                                  : "bi-eye-slash-fill"
+                              }`}
+                            ></i>
                           </a>
                         </div>
                       </div>
