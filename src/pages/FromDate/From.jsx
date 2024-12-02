@@ -1,6 +1,5 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const From = () => {
   return (
@@ -13,9 +12,9 @@ const From = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb mb-0 p-0">
                 <li className="breadcrumb-item">
-                  <a href="javascript:;">
+                  <Link to="#">
                     <i className="bx bx-home-alt"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
                   Form Layouts
@@ -36,19 +35,19 @@ const From = () => {
                 <span className="visually-hidden">Toggle Dropdown</span>
               </button>
               <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Another action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Something else here
-                </a>
+                </Link>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Separated link
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -252,7 +251,7 @@ const From = () => {
                       >
                         Submit
                       </button>
-                      <button type="button" className="btn btn-grd-royal px-4">
+                      <button type="reset" className="btn btn-grd-royal px-4">
                         Reset
                       </button>
                     </div>
