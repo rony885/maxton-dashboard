@@ -103,8 +103,8 @@ const SupplierLedger = () => {
                 <hr className="mb-3" />
 
                 <div
-                  className="table_data"
-                  style={{ overflowX: "auto", marginTop: "30px" }}
+                  className="table_data hide-printItem"
+                  style={{ marginTop: "30px" }}
                 >
                   <table className="table table-bordered text-center">
                     <thead>
@@ -172,6 +172,7 @@ const Wrapper = styled.section`
     overflow-x: auto !important;
     overflow-y: auto !important;
   }
+
   @media screen and (max-width: 768px) {
     .main_form {
       flex-direction: column !important;
@@ -183,16 +184,8 @@ const Wrapper = styled.section`
     .search {
       width: 100% !important;
     }
-    .print {
-      width: 20% !important;
-      margin-top: 0 !important;
-    }
   }
-  @media screen and (max-width: 320px) {
-    .print {
-      width: 30% !important;
-    }
-  }
+
   /* ====== home responsive ====== */
   @media screen and (max-width: 768px) {
     .page-breadcrumb {

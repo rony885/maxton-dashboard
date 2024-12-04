@@ -15,7 +15,7 @@ const CustomizeThem = () => {
     document.documentElement.setAttribute("data-bs-theme", newTheme); // Apply the new theme to the HTML tag
   };
   return (
-    <>
+    <div className="hide-printItem">
       {/* Customize button */}
       <button
         className="btn btn-grd btn-grd-primary position-fixed d-flex align-items-center gap-2"
@@ -30,7 +30,7 @@ const CustomizeThem = () => {
       >
         <i className="material-icons-outlined">tune</i>Customize
       </button>
-      
+
       {/* Offcanvas sidebar */}
       <div
         className="offcanvas offcanvas-end"
@@ -157,7 +157,7 @@ const CustomizeThem = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default CustomizeThem;

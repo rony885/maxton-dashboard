@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     // <footer className="page-footer d-flex justify-content-start align-items-start">
-    <footer className="page-footer">
+    <footer className="page-footer hide-printItem">
       <div className="copyright-column">
         <div className="copyright">
           <Link

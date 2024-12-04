@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="top-header">
+    <header className="top-header hide-printItem">
       <nav className="navbar navbar-expand align-items-center gap-4">
         <div className="btn-toggle">
           <Link to="#">
