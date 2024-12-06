@@ -87,7 +87,7 @@ const CategoryDataTable = ({ data }) => {
                     : "▼"
                   : ""}
               </th>
-              <th className="text-center">Action</th>
+              <th className="">Action</th>
             </tr>
           </thead>
 
@@ -101,8 +101,8 @@ const CategoryDataTable = ({ data }) => {
                 <td className="texxt">{item.name}</td>
                 <td className="texxt">{item.status}</td>
 
-                <td className="d-flex justify-content-center align-items-center">
-                  <ul className="d-flex gap-2 list-unstyled mb-0">
+                <td className="">
+                  <ul className="d-flex gap-2 list-unstyled mb-0 ">
                     <li>
                       <button
                         type="button"

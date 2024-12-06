@@ -86,7 +86,7 @@ const UnitDataTable = ({ data }) => {
                     : "▼"
                   : ""}
               </th>
-              <th className="text-center">Action</th>
+              <th className="">Action</th>
             </tr>
           </thead>
 
@@ -99,7 +99,7 @@ const UnitDataTable = ({ data }) => {
                 <td className="texxt">{item.id}</td>
                 <td className="texxt">{item.name}</td>
                 <td className="texxt">{item.status}</td>
-                <td className="d-flex justify-content-center align-items-center">
+                <td className="">
                   <ul className="d-flex gap-2 list-unstyled mb-0">
                     <li>
                       <button
