@@ -1,7 +1,7 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ComponentCarousels = () => {
   return (
@@ -14,9 +14,9 @@ const ComponentCarousels = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb mb-0 p-0">
                 <li className="breadcrumb-item">
-                  <a href="javascript:;">
+                  <Link to="#">
                     <i className="bx bx-home-alt"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
                   Carousels
@@ -37,19 +37,19 @@ const ComponentCarousels = () => {
                 <span className="visually-hidden">Toggle Dropdown</span>
               </button>
               <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Another action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Something else here
-                </a>
+                </Link>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Separated link
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -127,9 +127,9 @@ const ComponentCarousels = () => {
                       />
                     </div>
                   </div>
-                  <a
+                  <Link
                     className="carousel-control-prev"
-                    href="#carouselExampleControls"
+                    to="#carouselExampleControls"
                     role="button"
                     data-bs-slide="prev"
                   >
@@ -138,10 +138,10 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Previous</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="carousel-control-next"
-                    href="#carouselExampleControls"
+                    to="#carouselExampleControls"
                     role="button"
                     data-bs-slide="next"
                   >
@@ -150,7 +150,7 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Next</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -203,9 +203,9 @@ const ComponentCarousels = () => {
                       />
                     </div>
                   </div>
-                  <a
+                  <Link
                     className="carousel-control-prev"
-                    href="#carouselExampleIndicators"
+                    to="#carouselExampleIndicators"
                     role="button"
                     data-bs-slide="prev"
                   >
@@ -214,10 +214,10 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Previous</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="carousel-control-next"
-                    href="#carouselExampleIndicators"
+                    to="#carouselExampleIndicators"
                     role="button"
                     data-bs-slide="next"
                   >
@@ -226,7 +226,7 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Next</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -266,7 +266,7 @@ const ComponentCarousels = () => {
                       <div className="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>
-                          Nulla vitae elit libero, a pharetra augue mollis
+                          Nulla vitae elit libero, Link pharetra augue mollis
                           interdum.
                         </p>
                       </div>
@@ -300,9 +300,9 @@ const ComponentCarousels = () => {
                       </div>
                     </div>
                   </div>
-                  <a
+                  <Link
                     className="carousel-control-prev"
-                    href="#carouselExampleCaptions"
+                    to="#carouselExampleCaptions"
                     role="button"
                     data-bs-slide="prev"
                   >
@@ -311,10 +311,10 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Previous</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="carousel-control-next"
-                    href="#carouselExampleCaptions"
+                    to="#carouselExampleCaptions"
                     role="button"
                     data-bs-slide="next"
                   >
@@ -323,7 +323,7 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Next</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -361,9 +361,9 @@ const ComponentCarousels = () => {
                       />
                     </div>
                   </div>
-                  <a
+                  <Link
                     className="carousel-control-prev"
-                    href="#carouselExampleFade"
+                    to="#carouselExampleFade"
                     role="button"
                     data-bs-slide="prev"
                   >
@@ -372,10 +372,10 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Previous</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="carousel-control-next"
-                    href="#carouselExampleFade"
+                    to="#carouselExampleFade"
                     role="button"
                     data-bs-slide="next"
                   >
@@ -384,7 +384,7 @@ const ComponentCarousels = () => {
                       aria-hidden="true"
                     ></span>
                     <span className="visually-hidden">Next</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

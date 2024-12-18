@@ -1,9 +1,9 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 
 import React, { useEffect } from "react";
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { Link } from "react-router-dom";
 
 const DateTimePickers = () => {
   useEffect(() => {
@@ -51,9 +51,9 @@ const DateTimePickers = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb mb-0 p-0">
                 <li className="breadcrumb-item">
-                  <a href="javascript:;">
+                  <Link to="#">
                     <i className="bx bx-home-alt"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
                   Date Time Pickers
@@ -74,19 +74,19 @@ const DateTimePickers = () => {
                 <span className="visually-hidden">Toggle Dropdown</span>
               </button>
               <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Another action
-                </a>
-                <a className="dropdown-item" href="javascript:;">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Something else here
-                </a>
+                </Link>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Separated link
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const DateTimePickers = () => {
             <div className="card">
               <div className="card-body">
                 <div className="mb-3">
-                  <label className="form-label">Pick a Date</label>
+                  <label className="form-label">Pick Link Date</label>
                   <input type="text" className="form-control datepicker" />
                 </div>
                 <div className="mb-3">

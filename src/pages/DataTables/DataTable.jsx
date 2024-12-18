@@ -1,4 +1,4 @@
-/* eslint-disable no-script-url */
+
 
 import React from "react";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ const DataTable = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb mb-0 p-0">
                 <li className="breadcrumb-item">
-                  <Link to="javascript:;">
+                  <Link to="#">
                     <i className="bx bx-home-alt"></i>
                   </Link>
                 </li>
@@ -37,17 +37,17 @@ const DataTable = () => {
                 <span className="visually-hidden">Toggle Dropdown</span>
               </button>
               <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">
-                <Link className="dropdown-item" to="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Action
                 </Link>
-                <Link className="dropdown-item" to="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Another action
                 </Link>
-                <Link className="dropdown-item" to="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Something else here
                 </Link>
                 <div className="dropdown-divider"></div>
-                <Link className="dropdown-item" to="javascript:;">
+                <Link className="dropdown-item" to="#">
                   Separated link
                 </Link>
               </div>
